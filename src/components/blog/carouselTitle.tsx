@@ -10,7 +10,7 @@ const CarouselTitle = () => {
         Where Stories Reside
       </h1>
       <div>
-        <Button variant={"ghost"}>View Blogs</Button>
+        <Button variant={"ghost"}>View Blogs and article</Button>
       </div>
     </div>
   );
