@@ -10,6 +10,7 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import { Button } from "../ui/button";
+import { animate, motion } from "framer-motion";
 
 export function CarouselDemo() {
   const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
@@ -29,7 +30,14 @@ export function CarouselDemo() {
                 src={images[i].url}
               />
               <div className="absolute flex flex-col items-center gap-5">
-                <h1
+                <motion.h1
+                  initial={{ y: -10000 }}
+                  animate={{ y: [900, 0] }}
+                  transition={{
+                    duration: "3",
+                    delay: 1,
+                  }}
+                  whileHover={{ scale: 0.9, opacity: 0.2 }}
                   className="text-6xl text-white font-bold text-center"
                   dangerouslySetInnerHTML={{ __html: images[i].text }}
                 />
