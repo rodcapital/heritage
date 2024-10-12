@@ -17,7 +17,15 @@ export function CarouselDemo() {
 
   return (
     <div ref={emblaRef} className="overflow-hidden">
-      <Carousel className=" w-full mx-auto">
+      {/* header here */}
+      <Carousel
+        plugins={[
+          Autoplay({
+            delay: 5000,
+          }),
+        ]}
+        className=" w-full mx-auto"
+      >
         <CarouselContent>
           {Array.from({ length: 5 }).map((_, i) => (
             <CarouselItem
@@ -45,7 +53,7 @@ export function CarouselDemo() {
                 {/* the h1 above is written like that so my br tag below can work */}
 
                 <div>
-                  <Button className="translate-y-6 bg-white/10 backdrop-blur-sm shadow-sm border border-white hover:bg-white/20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
+                  <Button className="transform translate-y-6 bg-white/10 backdrop-blur-sm shadow-sm border border-white hover:bg-white/20 transition-all ease-in-out hover:translate-y-1 hover:scale-110 hover:duration-1000">
                     View Blogs
                   </Button>
                 </div>
