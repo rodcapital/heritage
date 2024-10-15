@@ -4,7 +4,10 @@ import Links from "./Links";
 
 const Header = () => {
   return (
-    <div className="flex items-center gap-3 p-2 shadow-sm rounded-full w-[900px] mx-auto justify-between border-[1px] relative">
+    <div
+      id="header"
+      className="flex items-center gap-3 p-2 shadow-sm rounded-full w-[900px] mx-auto justify-between border-[1px] relative"
+    >
       <div className="flex">
         <h1 className="text-xl font-bold px-3">Heritage</h1>
       </div>

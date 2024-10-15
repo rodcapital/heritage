@@ -26,16 +26,16 @@ const Categories = () => {
 
           <DropdownMenuGroup>
             <DropdownMenuItem>
-              <span>Profile</span>
+              <span>Education</span>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <span>Billing</span>
+              <span>Arts & Entertainment</span>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <span>Settings</span>
+              <span>Sports</span>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <span>Keyboard shortcuts</span>
+              <span>Science & Technology</span>
             </DropdownMenuItem>
           </DropdownMenuGroup>
         </DropdownMenuContent>
