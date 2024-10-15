@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Button } from "./ui/button";
 import Links from "./Links";
+import { Connect } from "./connect";
 
 const Header = () => {
   return (
@@ -17,9 +18,7 @@ const Header = () => {
         </div>
       </div>
 
-      <Button className=" rounded-full hover:bg-white hover:text-black hover:border-black hover:border-[3px]">
-        Hire Me
-      </Button>
+      <Connect />
     </div>
   );
 };

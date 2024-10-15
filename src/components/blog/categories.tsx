@@ -21,7 +21,10 @@ const Categories = () => {
             <span>Categories</span>
           </div>
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="w-56 z-50" align="start">
+        <DropdownMenuContent
+          className="w-56 z-50 bg-black/30 backdrop-blur-md "
+          align="start"
+        >
           <DropdownMenuLabel></DropdownMenuLabel>
 
           <DropdownMenuGroup>
