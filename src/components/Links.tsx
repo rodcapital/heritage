@@ -18,6 +18,7 @@ import Link from "next/link";
 const Links = () => {
   return (
     <div className="flex gap-8">
+      {/* map through to add the scroll animation from reactScroll */}
       {linksData.map((l) => (
         <>
           {l.slug !== "contacts" ? (

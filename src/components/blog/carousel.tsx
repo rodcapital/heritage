@@ -11,12 +11,14 @@ import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import { Button } from "../ui/button";
 import { animate, motion } from "framer-motion";
+import BlogHeader from "./blogHeader";
 
 export function CarouselDemo() {
   const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
 
   return (
     <div ref={emblaRef} className="overflow-hidden">
+      
       {/* header here */}
       <Carousel
         plugins={[
