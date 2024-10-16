@@ -2,6 +2,8 @@
 import React from "react";
 import { Button } from "./ui/button";
 import { animate, motion } from "framer-motion";
+import Text from "./text";
+import { WelcomeText } from "./welcomeText";
 
 const Body = () => {
   const lineVariants = {
@@ -18,27 +20,7 @@ const Body = () => {
   };
   return (
     <div id="top" className="flex flex-col p-16 h-full">
-      <motion.h1
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.6, duration: 0.9, ease: "easeOut" }}
-        variants={lineVariants}
-        style={{ display: "inline-block", marginRight: "5px" }}
-        className="text-8xl font-extrabold"
-      >
-        Hello!
-      </motion.h1>
-      <motion.h1
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        variants={lineVariants}
-        transition={{ delay: 0.8, duration: 0.9, ease: "easeOut" }}
-        style={{ display: "inline-block", marginRight: "5px" }}
-        className="text-8xl font-extrabold"
-      >
-        I'm Heritage
-      </motion.h1>
-
+      <WelcomeText />
       <div className="my-7 flex gap-4">
         <Button
           variant={"ghost"}
@@ -59,11 +41,7 @@ const Body = () => {
           Essay writer
         </Button>
       </div>
-
-      <motion.h3 className="font-semibold text-2xl my-3">
-        Let's Scribble your dreams to life <br /> with a touch of creativity and
-        excellence.
-      </motion.h3>
+      <Text />
     </div>
   );
 };

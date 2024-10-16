@@ -6,6 +6,8 @@ import Form from "@/components/form";
 import Header from "@/components/header";
 import ImageSlide from "@/components/imageSlide";
 import Services from "@/components/services";
+import Text from "@/components/text";
+import { TextGenerateEffect } from "@/components/ui/textGenerateEffect";
 import Image from "next/image";
 
 export default function Home() {
@@ -19,7 +21,6 @@ export default function Home() {
       <Services />
       <BackTop />
       <Footer />
-      
     </div>
   );
 }
