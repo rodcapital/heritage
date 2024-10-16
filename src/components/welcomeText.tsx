@@ -24,7 +24,11 @@ export function WelcomeText() {
         cursorClassName="bg-white"
         words={[words[0]]}
       />
-      <TypewriterEffect className="text-left " words={[...words.slice(1, 3)]} />
+      <TypewriterEffect
+        className="text-left"
+        cursorClassName="h-16 bg-purple"
+        words={[...words.slice(1, 3)]}
+      />
     </div>
   );
 }
