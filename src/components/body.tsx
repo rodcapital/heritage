@@ -23,18 +23,21 @@ const Body = () => {
       <WelcomeText />
       <div className="my-7 flex gap-4">
         <Button
+          data-aos="zoom-in-up"
           variant={"ghost"}
           className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300 rounded-full border-2 border-black hover:bg-black hover:text-white"
         >
           Copywriter
         </Button>
         <Button
+          data-aos="zoom-in-up"
           variant={"ghost"}
           className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300 rounded-full border-2 border-black  hover:bg-black hover:text-white"
         >
           Ghostwriter
         </Button>
         <Button
+          data-aos="zoom-in-up"
           variant={"ghost"}
           className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300 rounded-full border-2 border-black  hover:bg-black hover:text-white"
         >

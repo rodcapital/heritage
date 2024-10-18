@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const BlogHeader = () => {
   return (
-    <div className="fixed top-0 left-0 right-0 text-white z-50 bg-black/30 backdrop-blur-md flex items-center justify-between px-5 py-1">
+    <div className="fixed top-0 left-0 right-0 w-full text-white z-50 bg-black/30 backdrop-blur-md flex items-center justify-between px-5 py-1">
       <div>
         <Link href={"/"}>
           <div className="flex items-center text-2xl font-bold">
@@ -22,7 +22,7 @@ const BlogHeader = () => {
 
       <SearchBar />
 
-      <div className="flex gap-12">
+      <div className="flex gap-10">
         <Categories />
 
         <div className="flex items-center gap-1">

@@ -14,7 +14,7 @@ export function WelcomeText() {
 
     {
       text: "HERITAGE",
-      className: "text-purple-500 dark:text-purple-500 text-8xl font-extrabold",
+      className: "text-purple-900 dark:text-purple-500 text-8xl font-extrabold",
     },
   ];
   return (

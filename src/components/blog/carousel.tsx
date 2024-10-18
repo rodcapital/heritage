@@ -11,14 +11,13 @@ import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import { Button } from "../ui/button";
 import { animate, motion } from "framer-motion";
-import BlogHeader from "./blogHeader";
+import { Link as ScrollLink } from "react-scroll";
 
 export function CarouselDemo() {
   const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
 
   return (
     <div ref={emblaRef} className="overflow-hidden">
-      
       {/* header here */}
       <Carousel
         plugins={[
@@ -55,9 +54,24 @@ export function CarouselDemo() {
                 {/* the h1 above is written like that so my br tag below can work */}
 
                 <div>
-                  <Button className="transform translate-y-6 bg-white/10 backdrop-blur-sm shadow-sm border border-white hover:bg-white/20 transition-all ease-in-out hover:translate-y-1 hover:scale-110 hover:duration-1000">
-                    View Blogs
-                  </Button>
+                  <ScrollLink
+                    className="hover:underline"
+                    activeClass=""
+                    to={"blogPage"}
+                    spy={true}
+                    smooth={true}
+                    hashSpy={true}
+                    offset={50}
+                    duration={2500}
+                    // delay={1000}
+                    isDynamic={true}
+                    ignoreCancelEvents={false}
+                    spyThrottle={500}
+                  >
+                    <Button className="transform translate-y-6 bg-white/10 backdrop-blur-sm shadow-sm border border-white hover:bg-white/20 transition-all ease-in-out hover:translate-y-1 hover:scale-110 hover:duration-1000">
+                      View Blogs
+                    </Button>
+                  </ScrollLink>
                 </div>
               </div>
             </CarouselItem>

@@ -17,7 +17,7 @@ const Categories = () => {
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <div className="hover:underline text-sm flex items-center gap-2">
-            <AlignJustify width={16} />
+            <AlignJustify width={10} />
             <span>Categories</span>
           </div>
         </DropdownMenuTrigger>
