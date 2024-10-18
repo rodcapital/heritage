@@ -85,24 +85,6 @@ const Services = () => {
                   Product Description
                 </button>
               </div>
-
-              <div className="text-center py-24">
-                <div className="flex gap-3">
-                  <div className="bg-black h-8 flex items-center justify-center w-8 rounded-full text-white text-center hover:bg-white hover:text-black hover:border-[1px] hover:border-black">
-                    <span>1</span>
-                  </div>
-                  <div className="bg-black h-8 flex items-center justify-center w-8 rounded-full text-white text-center hover:bg-white hover:text-black hover:border-[1px] hover:border-black">
-                    <span>2</span>
-                  </div>
-                  <div className="bg-black h-8 flex items-center justify-center w-8 rounded-full text-white text-center hover:bg-white hover:text-black hover:border-[1px] hover:border-black">
-                    <span>3</span>
-                  </div>
-                  <div className="bg-black h-8 flex items-center justify-center w-8 rounded-full text-white text-center hover:bg-white hover:text-black hover:border-[1px] hover:border-black">
-                    <span>4</span>
-                  </div>
-                </div>
-                <span>Pages</span>
-              </div>
             </div>
           </div>
         </div>

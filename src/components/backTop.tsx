@@ -1,13 +1,30 @@
 "use client";
 import { ChevronUp } from "lucide-react";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Button } from "./ui/button";
-import Link from "next/link";
 import { animateScroll } from "react-scroll";
 
 const BackTop = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
-    <div className="flex justify-end my-2 mx-1 right-4 fixed bottom-2 animate-bounce ">
+    <div
+      className={`flex justify-end my-2 mx-1 right-4 fixed bottom-2 animate-bounce transition-opacity ${
+        isVisible ? "opacity-100" : "opacity-0"
+      }`}
+    >
       <Button
         onClick={() => {
           animateScroll.scrollToTop({

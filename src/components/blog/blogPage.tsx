@@ -13,13 +13,13 @@ const BlogPage = () => {
   return (
     <Element name="blogPage">
       <div>
-        <div className="py-4 pt-36 text-center">
+        <div className="py-4 flex justify-center pt-36 text-center">
           <Explore />
         </div>
         <div id="blogpage" className="grid md:grid-cols-3 gap-4 p-3">
           {cardData.map((data) => (
             <Card className="h-full">
-              <CardContent className="flex flex-col h-full p-5">
+              <CardContent className="flex flex-col h-full p-3">
                 <div className="h-[280px]">
                   <Image
                     src={data.image}
@@ -30,7 +30,7 @@ const BlogPage = () => {
                   />
                 </div>
                 <div className="flex flex-1 flex-col gap-3 py-1">
-                  <div className="flex text-sm">
+                  <div className="flex items-center text-sm">
                     <Badge className="bg-purple-300 hover:bg-purple-300 font-light text-black">
                       {data.category}
                     </Badge>

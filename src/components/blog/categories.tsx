@@ -13,7 +13,7 @@ import { AlignJustify, List } from "lucide-react";
 
 const Categories = () => {
   return (
-    <div className="">
+    <div className="relative">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <div className="hover:underline text-sm flex items-center gap-2">
@@ -22,7 +22,7 @@ const Categories = () => {
           </div>
         </DropdownMenuTrigger>
         <DropdownMenuContent
-          className="w-56 z-50 bg-black/30 backdrop-blur-md "
+          className="w-56 z-50 bg-black/30 backdrop-blur-md max-h-64 fixed top-4"
           align="start"
         >
           <DropdownMenuLabel></DropdownMenuLabel>
