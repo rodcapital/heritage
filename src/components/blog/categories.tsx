@@ -1,50 +1,40 @@
-import React from "react";
+import { AlignJustify } from 'lucide-react';
 import {
-  DropdownMenu,
-  DropdownMenuGroup,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuTrigger,
-} from "../ui/dropdown-menu";
-import { DropdownMenuContent } from "@radix-ui/react-dropdown-menu";
-import { AlignJustify, List } from "lucide-react";
+	Menubar,
+	MenubarContent,
+	MenubarItem,
+	MenubarMenu,
+	MenubarTrigger,
+} from '@/components/ui/menubar';
+import { Button } from '../ui/button';
 
-const Categories = () => {
-  return (
-    <div className="relative">
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <div className="hover:underline text-sm flex items-center gap-2">
-            <AlignJustify width={10} />
-            <span>Categories</span>
-          </div>
-        </DropdownMenuTrigger>
-        <DropdownMenuContent
-          className="w-56 z-50 bg-black/30 backdrop-blur-md max-h-64 fixed top-4"
-          align="start"
-        >
-          <DropdownMenuLabel></DropdownMenuLabel>
-
-          <DropdownMenuGroup>
-            <DropdownMenuItem>
-              <span>Education</span>
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              <span>Arts & Entertainment</span>
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              <span>Sports</span>
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              <span>Science & Technology</span>
-            </DropdownMenuItem>
-          </DropdownMenuGroup>
-        </DropdownMenuContent>
-      </DropdownMenu>
-    </div>
-  );
-};
-
-export default Categories;
+export default function Categories() {
+	return (
+		<Menubar className=" bg-transparent border-none ">
+			<MenubarMenu>
+				<MenubarTrigger
+					className="data-[state=open]:bg-transparent data-[state=open]:text-white focus:bg-transparent focus:text-white bg-transparent border-none "
+					asChild>
+					<div className="hover:underline text-white text-sm flex items-center gap-2">
+						<AlignJustify width={10} />
+						<span>Categories</span>
+					</div>
+				</MenubarTrigger>
+				<MenubarContent className="w-56 z-50 bg-black/30 text-white backdrop-blur-md max-h-64 fixed top-2 border-none">
+					<MenubarItem>
+						<span>Education</span>
+					</MenubarItem>
+					<MenubarItem>
+						<span>Arts & Entertainment</span>
+					</MenubarItem>
+					<MenubarItem>
+						<span>Sports</span>
+					</MenubarItem>
+					<MenubarItem>
+						<span>Science & Technology</span>
+					</MenubarItem>
+				</MenubarContent>
+			</MenubarMenu>
+		</Menubar>
+	);
+}
