@@ -26,7 +26,7 @@ export function WelcomeText() {
       />
       <TypewriterEffect
         className="text-left"
-        cursorClassName="h-16 bg-purple"
+        cursorClassName="h-16 bg-purple dark:bg-purple"
         words={[...words.slice(1, 3)]}
       />
     </div>

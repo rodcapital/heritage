@@ -15,7 +15,7 @@ export function Connect() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className="bg-black rounded-full hover:bg-transparent hover:text-black border-2 border-black">
+        <Button className="bg-black dark:hover:border-purple-900 dark:hover:bg-transparent dark:bg-purple-900 dark:text-white rounded-full hover:bg-transparent hover:text-black border-2 border-black">
           Let's Connect
         </Button>
       </DialogTrigger>

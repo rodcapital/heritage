@@ -1,3 +1,4 @@
+import { ThemeProvider } from "@/components/themeProvider";
 import React from "react";
 
 const Clientlayout = ({
@@ -5,7 +6,18 @@ const Clientlayout = ({
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
-  return <div>{children}</div>;
+  return (
+    <div>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+      >
+        {children}
+      </ThemeProvider>
+    </div>
+  );
 };
 
 export default Clientlayout;

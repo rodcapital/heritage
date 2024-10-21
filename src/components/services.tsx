@@ -22,7 +22,7 @@ const Services = () => {
             <Button
               data-aos="fade-up"
               data-aos-anchor-placement="bottom-bottom"
-              className="text-center px-8 text-xl rounded-full bg-black hover:bg-white hover:text-black hover:border-2 hover:border-black"
+              className="text-center dark:hover:bg-transparent dark:hover:border-purple-900 dark:bg-purple-900 dark:text-white px-8 text-xl rounded-full bg-black hover:bg-white hover:text-black hover:border-2 hover:border-black"
             >
               Services
             </Button>
@@ -41,25 +41,25 @@ const Services = () => {
               <div className="space-x-4">
                 <button
                   data-aos="zoom-in-up"
-                  className="bg-white text-black border-2 border-black rounded-full px-5 py-2 hover:text-white hover:bg-black"
+                  className="bg-white dark:hover:bg-transparent dark:bg-purple-900 dark:hover:border-purple-900 dark:text-white text-black border-2 border-black rounded-full px-5 py-2 hover:text-white hover:bg-black"
                 >
                   Copywriting
                 </button>
                 <button
                   data-aos="zoom-in-up"
-                  className="bg-white text-black border-2 border-black rounded-full px-5 py-2 hover:text-white hover:bg-black"
+                  className="bg-white dark:hover:bg-transparent dark:bg-purple-900 dark:hover:border-purple-900 dark:text-white text-black border-2 border-black rounded-full px-5 py-2 hover:text-white hover:bg-black"
                 >
                   Ghostwriting
                 </button>
                 <button
                   data-aos="zoom-in-up"
-                  className="bg-white  text-black border-2 border-black rounded-full px-5 py-2 hover:text-white hover:bg-black"
+                  className="bg-white dark:hover:bg-transparent dark:bg-purple-900 dark:hover:border-purple-900 dark:text-white  text-black border-2 border-black rounded-full px-5 py-2 hover:text-white hover:bg-black"
                 >
                   Essay Writing
                 </button>
                 <button
                   data-aos="zoom-in-up"
-                  className="bg-white text-black border-2 border-black rounded-full px-5 py-2 hover:text-white hover:bg-black"
+                  className="bg-white dark:hover:bg-transparent dark:bg-purple-900 dark:hover:border-purple-900 dark:text-white text-black border-2 border-black rounded-full px-5 py-2 hover:text-white hover:bg-black"
                 >
                   Blog Writing
                 </button>
@@ -68,19 +68,19 @@ const Services = () => {
               <div className="space-x-3">
                 <button
                   data-aos="zoom-in-up"
-                  className="bg-white text-black border-2 border-black rounded-full px-5 py-2 hover:text-white hover:bg-black"
+                  className="bg-white dark:hover:bg-transparent dark:bg-purple-900 dark:hover:border-purple-900 dark:text-white text-black border-2 border-black rounded-full px-5 py-2 hover:text-white hover:bg-black"
                 >
                   Social Media Content
                 </button>
                 <button
                   data-aos="zoom-in-up"
-                  className="bg-white text-black border-2 border-black rounded-full px-5 py-2 hover:text-white hover:bg-black"
+                  className="bg-white dark:hover:bg-transparent dark:bg-purple-900 dark:hover:border-purple-900 dark:text-white text-black border-2 border-black rounded-full px-5 py-2 hover:text-white hover:bg-black"
                 >
                   SEO Writing
                 </button>
                 <button
                   data-aos="zoom-in-up"
-                  className="bg-white text-black border-2 border-black rounded-full px-5 py-2 hover:text-white hover:bg-black"
+                  className="bg-white dark:bg-purple-900 dark:text-white dark:hover:bg-transparent dark:hover:border-purple-900 text-black border-2 border-black rounded-full px-5 py-2 hover:text-white hover:bg-black"
                 >
                   Product Description
                 </button>

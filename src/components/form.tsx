@@ -19,7 +19,7 @@ const Form = () => {
                 <Input
                   required
                   placeholder="Your Company Name..."
-                  className="border border-black "
+                  className="border dark:border-white border-black "
                 />
               </div>
               <div className="">
@@ -27,7 +27,7 @@ const Form = () => {
                 <Input
                   required
                   placeholder="You@company.com"
-                  className="border border-black"
+                  className="border dark:border-white border-black"
                 />
               </div>
             </div>
@@ -36,7 +36,7 @@ const Form = () => {
               <Input
                 required
                 placeholder="Phone number"
-                className="border border-black"
+                className="border  dark:border-white border-black"
               />
             </div>
             <div className="">
@@ -44,10 +44,12 @@ const Form = () => {
               <Textarea
                 required
                 placeholder="Please leave a brief description of the job here"
-                className="border border-black"
+                className="border dark:border-white border-black"
               />
             </div>
-            <Button className="bg-black hover:bg-black">Submit</Button>
+            <Button className="bg-black dark:bg-purple-900  dark:text-white hover:bg-black">
+              Submit
+            </Button>
           </div>
         </CardContent>
       </Card>
