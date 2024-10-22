@@ -11,14 +11,7 @@ const BlogHeader = () => {
     <div className="fixed z-50 top-0 left-0 right-0 w-full text-white  bg-black/30 backdrop-blur-md flex items-center justify-between px-5 py-3">
       <div>
         <Link href={"/"}>
-          <div className="flex items-center  text-2xl font-bold">
-            <Image
-              height={50}
-              width={50}
-              alt=""
-              src={`/images/rect1-removebg-preview.png`}
-            />
-          </div>
+          <span className="text-2xl font-bold">Heritage</span>
         </Link>
       </div>
 

@@ -44,7 +44,7 @@ const BlogPage = () => {
                   </div>
 
                   <Link href={""} className="flex justify-end my-4">
-                    <Button className="flex bg-purple-800 rounded-full text-sm items-center gap-1 hover:bg-purple-900  hover:-translate-x-2 hover:transform duration-1000">
+                    <Button className="flex bg-purple-800 rounded-full text-sm items-center gap-1 dark:text-white hover:bg-purple-900  hover:-translate-x-2 hover:transform duration-1000">
                       <span>Read more</span>
                       <ChevronRight width={12} />
                     </Button>

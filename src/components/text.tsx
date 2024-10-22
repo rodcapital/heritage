@@ -21,7 +21,7 @@ export default function TextGenerateEffectDemo() {
   return (
     <TextGenerateEffect
       duration={2}
-      className="w-1/3"
+      className="w-1/2"
       filter={false}
       words={words}
     />

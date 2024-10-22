@@ -5,10 +5,10 @@ import { Search } from "lucide-react";
 
 const SearchBar = () => {
   return (
-    <div className="border rounded-full">
+    <div className="border dark:border-white  rounded-full">
       <form className="flex">
         <Button className="bg-transparent hover:bg-transparent rounded-none h-8  rounded-l-full">
-          <Search className="outline-none" width={16} />
+          <Search className="outline-none dark:text-white" width={16} />
         </Button>
         <Input
           placeholder="Search blogs..."

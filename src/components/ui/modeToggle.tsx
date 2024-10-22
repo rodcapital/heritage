@@ -20,7 +20,7 @@ export function ModeToggle() {
       <DropdownMenuTrigger asChild>
         <Button
           variant="ghost"
-          className="bg-purple-900 border-none"
+          className="bg-black text-white dark:bg-purple-900 dark:text-white border-none rounded-full hover:border hover:border-purple-900"
           size="icon"
         >
           <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />

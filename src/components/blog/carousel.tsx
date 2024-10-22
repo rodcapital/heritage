@@ -25,7 +25,7 @@ export function CarouselDemo() {
             delay: 5000,
           }),
         ]}
-        className=" w-full mx-auto"
+        className="w-full mx-auto"
       >
         <CarouselContent>
           {Array.from({ length: 5 }).map((_, i) => (
@@ -68,7 +68,7 @@ export function CarouselDemo() {
                     ignoreCancelEvents={false}
                     spyThrottle={500}
                   >
-                    <Button className="transform translate-y-6 bg-white/10 backdrop-blur-sm shadow-sm border border-white hover:bg-white/20 transition-all ease-in-out hover:translate-y-1 hover:scale-110 hover:duration-1000">
+                    <Button className="transform translate-y-6 bg-white/10 backdrop-blur-sm shadow-sm border border-white dark:text-white hover:bg-white/20 transition-all ease-in-out hover:translate-y-1 hover:scale-110 hover:duration-1000">
                       View Blogs
                     </Button>
                   </ScrollLink>

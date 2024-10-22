@@ -1,9 +1,10 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { Button } from "./ui/button";
 import { animate, motion } from "framer-motion";
 import Text from "./text";
 import { WelcomeText } from "./welcomeText";
+import { Connect } from "./connect";
 
 const Body = () => {
   const lineVariants = {
@@ -19,32 +20,27 @@ const Body = () => {
     }),
   };
   return (
-    <div id="top" className="flex flex-col p-16 h-full">
-      <WelcomeText />
-      <div className="my-7 flex gap-4">
-        <Button
-          data-aos="zoom-in-up"
-          variant={"ghost"}
-          className="transition dark:bg-purple-900 dark:text-white ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300 rounded-full border-2 border-black hover:bg-black hover:text-white"
-        >
-          Copywriter
-        </Button>
-        <Button
-          data-aos="zoom-in-up"
-          variant={"ghost"}
-          className="transition dark:bg-purple-900 dark:text-white ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300 rounded-full border-2 border-black  hover:bg-black hover:text-white"
-        >
-          Ghostwriter
-        </Button>
-        <Button
-          data-aos="zoom-in-up"
-          variant={"ghost"}
-          className="transition dark:bg-purple-900 dark:text-white ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300 rounded-full border-2 border-black  hover:bg-black hover:text-white"
-        >
-          Essay writer
-        </Button>
+    <div className="flex items-center">
+      <div id="top" className="flex gap-4 flex-col p-16 h-full">
+        <WelcomeText />
+        <div>
+          <Button
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            className="bg-black text-white dark:bg-purple-900 rounded-full px-8"
+          >
+            <span className="text-lg">Writer</span>
+          </Button>
+        </div>
+        <Text />
       </div>
-      <Text />
+      <img
+        src={`/images/Look festive (1).png`}
+        height={300}
+        width={300}
+        alt=""
+        className="pb-28"
+      />
     </div>
   );
 };

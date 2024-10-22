@@ -25,7 +25,7 @@ export function AboutCarousel() {
         {Array.from({ length: 5 }).map((_, i) => (
           <CarouselItem key={i + "a"} className="h-64">
             <div className="">
-              <Card className="bg-black border-none">
+              <Card className="bg-black   border-none">
                 <CardContent className="flex flex-col gap-7 aspect-square py ">
                   <h3 className="text-4xl  text-white">
                     {description[i].text}

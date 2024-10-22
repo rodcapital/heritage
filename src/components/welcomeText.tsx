@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { TypewriterEffect } from "./ui/typewriterEffect";
 
 export function WelcomeText() {
@@ -18,17 +19,19 @@ export function WelcomeText() {
     },
   ];
   return (
-    <div className="w-">
-      <TypewriterEffect
-        className="text-left "
-        cursorClassName="bg-white"
-        words={[words[0]]}
-      />
-      <TypewriterEffect
-        className="text-left"
-        cursorClassName="h-16 bg-purple dark:bg-purple"
-        words={[...words.slice(1, 3)]}
-      />
+    <div>
+      <div>
+        <TypewriterEffect
+          className="text-left"
+          cursorClassName="bg-white dark:bg-[#030712]"
+          words={[words[0]]}
+        />
+        <TypewriterEffect
+          className="text-left"
+          cursorClassName="h-16 bg-purple dark:bg-purple"
+          words={[...words.slice(1, 3)]}
+        />
+      </div>
     </div>
   );
 }

@@ -18,7 +18,6 @@ const Header = () => {
           <Links />
         </div>
       </div>
-
       <Connect />
     </div>
   );
