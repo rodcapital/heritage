@@ -5,7 +5,16 @@ const Adminlayout = ({
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
-  return <div>{children}</div>;
+  return (
+    <div>
+      {/* side bar here */}
+      <div>
+        {/* header here */}
+        {children}
+        {/* footer here */}
+      </div>
+    </div>
+  );
 };
 
 export default Adminlayout;

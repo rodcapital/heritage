@@ -8,8 +8,6 @@ import ImageSlide from "@/components/imageSlide";
 import Services from "@/components/services";
 import Text from "@/components/text";
 import { ModeToggle } from "@/components/ui/modeToggle";
-import { TextGenerateEffect } from "@/components/ui/textGenerateEffect";
-import Image from "next/image";
 
 export default function Home() {
   return (
