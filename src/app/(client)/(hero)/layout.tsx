@@ -14,7 +14,9 @@ const Clientlayout = ({
         enableSystem
         disableTransitionOnChange
       >
-        {children}
+        <div>
+          <div>{children}</div>
+        </div>
       </ThemeProvider>
     </div>
   );
