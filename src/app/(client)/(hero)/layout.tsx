@@ -8,16 +8,9 @@ const Clientlayout = ({
 }>) => {
   return (
     <div>
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="system"
-        enableSystem
-        disableTransitionOnChange
-      >
-        <div>
-          <div>{children}</div>
-        </div>
-      </ThemeProvider>
+      <div>
+        <div>{children}</div>
+      </div>
     </div>
   );
 };
