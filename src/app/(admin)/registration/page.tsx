@@ -1,10 +1,10 @@
-import Link from "next/link";
+import Form from "@/components/form";
 import React from "react";
 
 const page = () => {
   return (
     <div>
-      <Link href={"/dashboard"}>hello</Link>
+      <Form />
     </div>
   );
 };

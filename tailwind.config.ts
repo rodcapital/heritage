@@ -67,6 +67,13 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        sans: ["var(--font-geistvf)"],
+        mono: ["var(--font-geistvf)"],
+        oswald: ["var(--font-oswald)"],
+        lato: ["var(--font-lato)"],
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

@@ -2,7 +2,24 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/themeProvider";
+import { Inter, Oswald, Lato } from "next/font/google";
 
+const inter = Inter({
+  variable: "--font-inter",
+  weight: ["100", "700"],
+  subsets: ["greek"],
+});
+const latto = Lato({
+  variable: "--font-lato",
+  weight: ["100", "700", "900"],
+  subsets: ["latin"],
+  display: "swap",
+});
+const oswald = Oswald({
+  variable: "--font-oswald",
+  weight: ["300", "400", "500", "700"],
+  subsets: ["latin"],
+});
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -27,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${latto.variable} ${oswald.variable} ${inter.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider
           attribute="class"

@@ -1,7 +1,8 @@
 "use client";
+import { account } from "@/actions/appwrite";
 import Sidebar from "@/components/sidebar";
 import { ModeToggle } from "@/components/ui/modeToggle";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import React, { useEffect } from "react";
 
 const Adminlayout = ({
@@ -9,17 +10,6 @@ const Adminlayout = ({
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
-  const router = useRouter();
-  const userIsAdmin = true; // Set to false if you want to simulate a non-admin
-
-  useEffect(() => {
-    if (!userIsAdmin) {
-      router.push("/signin"); // Redirect non-admins to the signin page
-    }
-  }, [userIsAdmin, router]);
-
-  // Render nothing while redirecting non-admin users
-  if (!userIsAdmin) return null;
   return (
     <div className="grid grid-cols-[20rem,auto]">
       <div>

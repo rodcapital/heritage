@@ -22,12 +22,12 @@ export function WelcomeText() {
     <div>
       <div>
         <TypewriterEffect
-          className="text-left"
+          className="text-left font-lato font-extrabold"
           cursorClassName="bg-white dark:bg-[#030712]"
           words={[words[0]]}
         />
         <TypewriterEffect
-          className="text-left"
+          className="text-left font-lato font-extrabold"
           cursorClassName="h-16 bg-purple dark:bg-purple"
           words={[...words.slice(1, 3)]}
         />
